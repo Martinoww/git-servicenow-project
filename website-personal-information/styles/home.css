@@ -1,0 +1,66 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    border-bottom: 1px solid dodgerblue;
+}
+
+header .navigation .navigation-list  {
+    display: flex;
+}
+
+header .navigation .navigation-list .navigation-list-item {
+    margin-right: 2rem;
+}
+
+header .navigation .navigation-list .navigation-list-item .navigation-list-item-link {
+    color: dodgerblue;
+    font-size: 18px;
+}
+
+header .navigation .navigation-list .navigation-list-item .navigation-list-item-link:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+.description-container{
+    width: 90%;
+    margin: 3rem auto 5rem auto;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px 3fr;
+    column-gap: 3rem;
+    row-gap: 2rem;
+    grid-template-areas: 
+    "heading heading"
+    "photo paragraph";
+}
+
+.description-container .description-heading {
+    grid-area: heading;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.description-container .description-paragraph {
+    grid-area: paragraph;
+    font-size: 35px;
+    line-height: 1.2;
+    text-align: center;
+    background-color: rgb(167, 167, 167);
+    border-radius: 20px;
+    padding: 6rem;
+    color: white;
+}
+
+
+.description-container .img-container{
+    grid-area: photo;
+}
+.description-container .img-container .personal-image {
+    border-radius: 9px;
+    
+}

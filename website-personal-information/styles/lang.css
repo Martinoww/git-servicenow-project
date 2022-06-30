@@ -1,0 +1,41 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    border-bottom: 1px solid dodgerblue;
+}
+
+header .navigation .navigation-list  {
+    display: flex;
+}
+
+header .navigation .navigation-list .navigation-list-item {
+    margin-right: 2rem;
+    list-style: none;
+}
+
+header .navigation .navigation-list .navigation-list-item  a{
+   text-decoration: none;
+}
+
+header .navigation .navigation-list .navigation-list-item:nth-child(2) {
+    padding-bottom: 6px;
+    border-bottom: 2px solid dodgerblue;
+}
+
+header .navigation .navigation-list .navigation-list-item .navigation-list-item-link {
+    color: dodgerblue;
+    font-size: 18px;
+}
+
+header .navigation .navigation-list .navigation-list-item .navigation-list-item-link:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+main {
+    padding-left: 15rem;
+    padding-top: 5rem;
+}

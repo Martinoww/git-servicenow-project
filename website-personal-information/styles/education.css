@@ -1,0 +1,77 @@
+@import url('./reset.css');
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    border-bottom: 1px solid dodgerblue;
+}
+
+header .navigation .navigation-list  {
+    display: flex;
+}
+
+header .navigation .navigation-list .navigation-list-item {
+    margin-right: 2rem;
+}
+
+header .navigation .navigation-list .navigation-list-item:nth-child(1) {
+    padding-bottom: 6px;
+    border-bottom: 2px solid dodgerblue;
+}
+
+header .navigation .navigation-list .navigation-list-item .navigation-list-item-link {
+    color: dodgerblue;
+    font-size: 18px;
+}
+
+header .navigation .navigation-list .navigation-list-item .navigation-list-item-link:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+.high-school-path-container, .university-path-container, .softUni-path-container {
+    display: grid;
+    grid-template-areas:
+        "heading heading"
+        "descr navi";
+    row-gap: 1rem;
+    grid-template-rows: 50px 200px;
+    grid-template-columns: 50% 50%;
+    margin-inline: auto;
+    column-gap: 14rem;
+    padding: 3rem 2rem;
+    background: lightgrey;
+    width: 90%;
+    border-radius: 9px;
+    margin-bottom: 2rem;
+}
+
+.high-school-heading, .university-heading, .softUni-heading {
+    grid-area: heading;
+    font-size: 30px;
+}
+
+.high-school-description,.university-description,.softUni-description{
+    grid-area: descr;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.high-school-navi,.university-navi,.softUni-navi{
+    grid-area: navi;
+    width: auto;
+    height: auto;
+}
+
+main h1 {
+    text-align: center;
+    font-size: 40px;
+    margin: 3rem auto;
+    border-bottom: 1px solid gray;
+    width: 50%;
+}
