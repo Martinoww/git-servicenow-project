@@ -64,3 +64,8 @@ header .navigation .navigation-list .navigation-list-item .navigation-list-item-
     border-radius: 9px;
     
 }
+
+article#half-string-result-container, article#square-num-result-container, article#square-num-arr-result-container, article#isPrime-result-container, article#isPrime-twin-result-container {
+    margin: 2rem 5rem;
+
+}
